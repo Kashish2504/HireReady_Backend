@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.log
+*.env
+.env.*
+*.sqlite3
+
+# VSCode
+.vscode/
+
+# FastAPI / Uvicorn
+*.db
+instance/
+*.db-journal
+
+# MacOS
+.DS_Store
+
+# Node (when you add frontend)
+node_modules/
+dist/
+build/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# MongoDB dump or credentials
+*.pem
+*.key
+dump/
+
+# Python virtualenv
+venv/
+env/
+ENV/
+.venv/
