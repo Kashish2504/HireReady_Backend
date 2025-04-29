@@ -25,4 +25,3 @@ async def get_jobs():
     raw_jobs = await db.jobs.find().to_list(length=100)
     jobs = [serialize_job(job) for job in raw_jobs]
     return jobs
-
