@@ -3,7 +3,7 @@ from app.routes import user_routes
 from app.database.connection import check_connection, db
 import os
 import pandas as pd
-from app.routes import job_routes
+from app.routes import job_routes, mcq_routes
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
@@ -26,6 +26,7 @@ async def startup_event():
 
 app.include_router(user_routes.router, prefix="/api/user", tags=["User"])
 app.include_router(job_routes.router, prefix="/api", tags=["Jobs"])
+app.include_router(mcq_routes.router, prefix="/api", tags=['MCQs'])
 
 
 # @app.get("/jobs")
